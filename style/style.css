@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+          /*Navbar*/
+
+.main-header{
+    background-color: black;
+}
+
+.main-nav{
+    display:flex;
+    flex:1 1 2;
+    min-height: 10vh;
+    align-items: center;
+
+}
+
+.main-nav ul{
+    display:flex;
+    justify-content: space-around;
+    flex: 1 1 1rem;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.logo{
+    color: white;
+    flex: 1 1 10rem;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 50px;
+}
+
+a{
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+/*------------*/
+
+/*Première section*/
+
+.section1{
+    width: 100%;
+    height: 30vh;
+    background-image: url(/par/image/restaurant-449952_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accueil{
+    background-color: rgb(156, 150, 150);
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    border-radius:2px ;
+    border:5px solid black
+}
+
+.sec-reserv{
+    font-weight: 800;    
+}
+
+.sec-reserv:hover{
+    font-size:120% ;
+}
+
+.accueil:hover{
+    width:15em ;
+}
+
+/*Ligne Noir*/
+
+.lignenoir{
+    width:10em;
+    height:2px;
+    
+    background:black;
+    margin: 20px auto;
+    
+}
+
+/*Main-Course*/
+
+.section2{
+    margin-top:20px;
+    
+}
+
+.crevet{
+    display:flex;
+    align-items: center;
+}
+
+.culinaire{
+    font-family: 'Ruthie', cursive;
+    width: 150px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.crevette{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 10px;
+    animation-duration: 6s;
+    animation-name: slidein;
+    }
+
+@keyframes slidein{
+    from {
+        margin-left: 10%;
+        width: 50%;
+      }
+      to {
+        margin-left: 10px;
+        width: 50%;
+      }  
+    }      
+/*sushi*/
+
+
+
+.soushi{
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.sushi{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pays{
+    font-family: 'Ruthie', cursive;
+    width: 170px;
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+/*Dishes*/
+
+.dishes{
+    display:flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+/*Réservez*/
+.section3{
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.reserv{
+    background-color: grey;
+    color: black;
+    width: 150px;
+    font-weight: 800;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height:25vh;
+    background-color: black;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer ul p{
+    color: blanchedalmond;
+    margin: 10px ;
+}
+
+footer ul p a{
+    color: blanchedalmond;
+    margin: 10px ;
+}
+
+.adresse{
+    width: 100px;
+}
+
+.tel{
+    font-size:15px;
+}
+
+
+/*Desktop*/
+
+@media (min-width: 1080px) { 
+    .culinaire{
+        width: 250px;
+        font-size: 50px;
+        margin-left: 15%;
+    }
+
+    .pays{
+        width: 250px;
+        font-size: 50px;
+        margin-right: 15%;
+    }
+
+    .adresse{
+        width: 150px;
+    }
+    
+    .tel{
+        font-size:20px;
+    }
+
+    .insta{
+        margin-right: 20px;
+    }
+
+    /*image background*/
+    .section1{
+        height:100vh;
+    }
+}

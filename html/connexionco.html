@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Ruthie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/par/style/connexionstyle.css">
+    <title> Réservation</title>
+</head>
+<body>
+    <!--Navbar-->
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo"><h1 >Le Bistrot</h1></a>
+            <ul>
+                <li><a href="hhtml/menu.html">Menu</a></li>
+                <li><a href="/par/html/connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!--------Accueil----------->
+     <section class="section1">
+        <div class="accueil">
+            <p class="sec-reserv"> Réservez votre place</p>
+        </div>
+    </section>
+
+
+    <!--Ligne Noir-->
+    
+    <div class="lignenoir"></div>
+      
+    <main class="main">
+        
+        <section class="login" id="section_1"> 
+            <div class="container" id="div_1">
+                <h1> Réservation</h1>
+                <form method="GET" id="reservation"></form>
+
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <label for="Nom">Nom :</label>
+                                <input type="text" id="nameres" name="user_name">
+                            </div>
+                        <div>
+                            <label for="email">Mail :</label>
+                            <input type="email" id="emailres" name="user_mail">
+                        </div>
+                        <div>
+                            <label for="num">Num° :</label>
+                            <input type="num" id="numres" name="user_num">
+                        </div>
+                        <div>
+                            <label for="date"></label>
+                            <input type="datetime-local" id="dateres" name="reserv_date">
+                        </div>
+                        <input type="submit" value="Réservez" id="buttonres">
+                        </td>
+                    </tr>
+                </table>
+            </div>    
+        </section>
+
+        <section2 class="login" id="section_2">
+            
+            <div class="container" >
+                <h1>Veuillez réessayer! </h1>
+                <form id="form" method="get" action="/par/html/connexionco.html">
+                <div>
+                    <div>
+                        <label for="Nom">Nom :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <label for="email">Mail :</label>
+                    <input type="email" id="email" name="user_mail">
+                </div>
+                <div>
+                    <label for="password">MDP :</label>
+                    <input type="password" id="password" name="mdp">
+                </div>
+                
+                <input type="submit" value="Connexion" id="button">
+                </form>
+        </div>    
+        </section2>
+    </main>
+
+<footer>
+    <ul>
+        <li><p>Adresse</p></li>
+        <li> <p>Nous suivre</p></li>
+        <li> <p>Réservation</p></li>
+    </ul>   
+    <ul>
+        <li ><p class="adresse">15 rue Jacques Prévert (Le port-possession) 97420 le port</p></li>
+        <li ><a href="#">INSTAGRAM</a> <br> <a>FACEBOOK</a>
+        <li class="tel"><p >+2 62 69 39 28 03 7</p></li>
+    </ul>  
+</footer>
+</body>
+<script src="/par/script.js"></script>
+</html>

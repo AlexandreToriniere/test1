@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+      /*Navbar*/
+
+.main-header{
+    background-color: black;
+}
+
+.main-nav{
+    display:flex;
+    flex:1 1 2;
+    min-height: 10vh;
+    align-items: center;
+
+}
+
+.main-nav ul{
+    display:flex;
+    justify-content: space-around;
+    flex: 1 1 1rem;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.logo{
+    color: white;
+    flex: 1 1 10rem;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 50px;
+}
+
+a{
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+}
+/*------------*/
+    
+    /*Première section*/
+    
+    .section1{
+     
+        width: 100%;
+        height: 30vh;
+        background-image: url(image/the-creative-exchange-d1ngW7SNehM-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .accueil{
+        background-color: rgb(156, 150, 150);
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        border-radius:2px ;
+        border:5px solid black
+    }
+    
+    .sec-reserv{
+        font-weight: 800;    
+    }
+
+    .sec-reserv:hover{
+        font-size:120% ;
+    }
+    
+    .accueil:hover{
+        width:15em ;
+    }
+
+    /*Texte réservation*/
+    
+
+    #reservation{
+        font-family: 'Ruthie', cursive;
+        font-size: 20px ;
+        text-align: center;
+      
+    }
+
+    /*Ligne Noir*/
+    .lignenoir{
+        width:10em;
+        height:2px;
+        background:black;
+        margin: 20px auto;  
+    }
+    /*----------*/
+    .login{
+        
+        width: 100vw;
+        height:80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .container{
+        width: 70%;
+        height: 50%;
+        background-color: rgb(185, 183, 183);
+        border-radius: 5px;
+        line-height:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+    }
+
+    #date{
+        margin-left: 25px;
+    }
+
+    #dateres{
+        margin-left: 25px;
+    }
+
+    #button{
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    #buttonres{
+        margin-left: 80px;
+        text-align: center;
+    }
+    /*footer*/
+    footer{
+        width: 100%;
+        height:25vh;
+        background-color: black;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    footer ul p{
+        color: blanchedalmond;
+        margin: 10px ;
+    }
+
+    footer ul  a{
+        color: blanchedalmond;   
+    }
+
+    .adresse{
+        width: 100px;
+    }
+
+    .tel{
+        font-size:15px;
+    }
+
+    @media(min-width:1080px){
+        .login{
+            width: 100vw;
+            height:90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+
+    .container{
+        width: 45%;
+        height: 50%;
+        background-color: rgb(185, 183, 183);
+        border-radius: 5px;
+        line-height:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+    }
+
+    .adresse{
+        width: 150px;
+    }
+    
+    .tel{
+        font-size:20px;
+    }
+    
+    .section1{
+        height: 100vh;
+    }
+}
